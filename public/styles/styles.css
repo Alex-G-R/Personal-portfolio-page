@@ -258,6 +258,8 @@ header {
     background-color: rgb(36, 35, 35) ;
     border-radius: 15px;
     transition: all 0.6s ease 0s;
+    transform-style: preserve-3d;
+    perspective: 1000px;
 }
 
 .project-container:hover{
