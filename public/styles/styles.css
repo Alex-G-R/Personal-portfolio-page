@@ -117,7 +117,7 @@ header {
 #scroll-down-about {
     font-family: "Montserrat", sans-serif;
     font-size: 1em;
-    margin-top: 70px;
+    margin-top: 140px;
 }
 
 /* About section */
@@ -138,4 +138,37 @@ header {
 .about-text{
     max-width: 886px;
     margin-top: 20px;
+}
+/* Skills section */
+#skills{
+    margin-top: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+}
+.tech-stack-element{
+    flex-direction: row;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5em;
+    padding: 20px;
+    border-radius: 30px;
+    min-width: 162px;
+    background-color: darkturquoise;
+    margin-top: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: all 0.6s ease 0s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.tech-stack-element:hover{
+    background-color: #98FF98;
+    box-shadow: 0px 0px 12px #fff;
 }
