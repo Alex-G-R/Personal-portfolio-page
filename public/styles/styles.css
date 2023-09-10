@@ -251,6 +251,7 @@ header {
 }
 
 .project-container{
+    margin-top: 80px;
     font-family: "Montserrat", sans-serif;
     height: 500px;
     width: 800px;
@@ -283,13 +284,17 @@ header {
     background: transparent;
 }
 
+.project-container a{
+    background: transparent;
+}
+
 .project-container h4{
     margin-left: 25px;
     background: transparent;
 }
 
 .project-photo{
-    margin-top: 30px;
+    margin-top: 40px;
     margin-left: 50px;
     border-radius: 15px;
     height: 190px;
@@ -297,8 +302,32 @@ header {
     background: transparent;
 }
 
+.project-button{
+    margin-top: 30px;
+    height: 60px;
+    width: 130px;
+    margin-left: 35px;
+    cursor: pointer;
+    background: darkturquoise;
+    border-radius: 50px;
+    font-family: "Montserrat", sans-serif ;
+    border: #fff 1px solid;
+    font-size: 1em;
+    font-weight: 900;
+}
 
 #projectOne{
     margin-left: 5%;
     margin-right: 30%;
 }
+
+#projectTwo{
+    margin-left: 30%;
+    margin-right: 5%;
+}
+
+#projectThree{
+    margin-left: 5%;
+    margin-right: 30%;
+}
+
