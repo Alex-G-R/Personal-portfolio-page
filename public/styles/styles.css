@@ -8,6 +8,15 @@
     color: #fff;
 }
 
+/* Text coloring */
+
+.mint-green-text{
+    color: #98FF98;
+}
+.darkturcuse-text{
+    color: darkturquoise;
+}
+
 /* NavBar */
 
 .nav-option, .nav-option a {
@@ -60,9 +69,9 @@ header {
 }
 
 #contact-btn:hover {
-    background-color: darkturquoise;
+    background-color: #98FF98;
     color: white;
-    box-shadow: 0px 0px 15px #fff;
+    box-shadow: 0px 0px 12px #fff;
 }
 
 /* Home section */
@@ -72,7 +81,7 @@ header {
 }
 
 #home h1 {
-    color: darkturquoise;
+    color: #98FF98;
     font-family: "Montserrat", sans-serif;
     font-size: 180px;
     margin-top: 5%;
@@ -85,4 +94,30 @@ header {
     margin-top: 230px;
 }
 
+#name-title h2 span{
+    color: darkturquoise ;
+}
+
+#scroll-down-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#scroll-down {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    margin-top: 400px;
+}
+
 /* About section */
+#about{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+#about-introduction{
+    font-family: "Montserrat", sans-serif;
+}
