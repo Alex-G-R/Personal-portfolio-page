@@ -237,3 +237,68 @@ header {
 .js-tilt{
     border-radius: 15px;
 }
+
+/* Projects */
+
+#projects{
+    margin-top: 160px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.project-container{
+    font-family: "Montserrat", sans-serif;
+    height: 500px;
+    width: 800px;
+    background-color: rgb(36, 35, 35) ;
+    border-radius: 15px;
+    transition: all 0.6s ease 0s;
+}
+
+.project-container:hover{
+    box-shadow: 0px 0px 25px #fff;
+}
+
+.project-inner{
+    display: flex;
+    background: transparent;
+}
+
+.contents{
+    background: transparent;
+}
+
+.contents-photos{
+    background: transparent;
+    display: flex;
+}
+
+.project-container h1{
+    padding: 25px;
+    font-size: 3em;
+    background: transparent;
+}
+
+.project-container h4{
+    margin-left: 25px;
+    background: transparent;
+}
+
+.project-photo{
+    margin-top: 30px;
+    margin-left: 50px;
+    border-radius: 15px;
+    height: 190px;
+    width: 340px;
+    background: transparent;
+}
+
+
+#projectOne{
+    margin-left: 5%;
+    margin-right: 30%;
+}
