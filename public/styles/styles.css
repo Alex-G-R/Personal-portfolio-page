@@ -158,6 +158,7 @@ header {
 /* Skills section */
 #skills{
     margin-top: 160px;
+    margin-bottom: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -170,7 +171,10 @@ header {
     max-width: 1050px;
 }
 .tech-stack-element{
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-size: 1.5em;
@@ -184,10 +188,13 @@ header {
     transition: all 0.6s ease 0s;
     cursor: pointer;
     text-decoration: none;
+    transform-style: preserve-3d;
+    perspective: 1000px;
 }
 .tech-stack-element h3 {
     font-size: 1.6em;
-    background-color: rgb(36, 35, 35);
+    background-color: rgba(36, 35, 35, 0);
+    transform: translateZ(35px);
 }
 .tech-stack-element .rangeValue {
     margin-bottom: 20px;
@@ -195,6 +202,7 @@ header {
     font-family: "Montserrat", sans-serif;
     text-align: center  ;
     background-color: rgb(36, 35, 35);
+    transform: translateZ(30px);
 }
 .tech-stack-element input{
     -webkit-appearance: none;
@@ -214,10 +222,18 @@ header {
     box-shadow: -350px 0px 0px 340px #98FF98;
 }
 .tech-stack-element h4{
-    background-color: rgb(36, 35, 35) ;
+    display: flex;
+    margin: 0;
+    background-color: rgba(36, 35, 35, 0) ;
+    transform: translateZ(30px);
+    
 }
 
-/* .tech-stack-element:hover{
-    background-color: #98FF98;
+.tech-stack-element:hover{
     box-shadow: 0px 0px 12px #fff;
-} */
+    transform: translateZ(30px);
+}
+
+.js-tilt{
+    border-radius: 15px;
+}
