@@ -6,6 +6,7 @@
     box-sizing: border-box;
     background: #080808; /* Black bg */
     color: #fff;
+    scroll-behavior: smooth;
 }
 
 /* Text coloring */
