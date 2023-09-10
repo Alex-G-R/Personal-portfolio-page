@@ -28,6 +28,8 @@
 }
 
 header {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,6 +80,9 @@ header {
 #home{
     display: flex;
     justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 #home h1 {
@@ -89,9 +94,7 @@ header {
 
 #name-title{
     font-family: "Montserrat", sans-serif;
-    position: absolute;
     font-size: 1.12em;
-    margin-top: 230px;
 }
 
 #name-title h2 span{
@@ -115,9 +118,18 @@ header {
 #about{
     margin-top: 200px;
     display: flex;
+    align-items: center;
     justify-content: center;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 #about-introduction{
     font-family: "Montserrat", sans-serif;
+    font-size: 1.25em;
+}
+
+.about-text{
+    max-width: 886px;
+    margin-top: 20px;
 }
