@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #080808; /* Black bg */
+    color: #fff;
+}
+
+/* NavBar */
+
+.nav-option, .nav-option a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    color: #fff; /* White */
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%; /* 30px top and bottom, 10% on sides */
+}
+
+.logo{
+    max-width: 200px;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block; /* Side by side */
+    padding:  0px 20px;
+}
+
+.nav-links a {
+    transition: all 0.6s ease 0s;
+}
+
+.nav-links a:hover {
+    color: darkturquoise;
+}
+
+#contact-btn{
+    padding: 9px 25px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: all 0.6s ease 0s;
+}
+
+#contact-btn:hover {
+    background-color: darkturquoise;
+    color: white;
+    box-shadow: 0px 0px 15px #fff;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    justify-content: center;
+}
+
+#home h1 {
+    color: darkturquoise;
+    font-family: "Montserrat", sans-serif;
+    font-size: 180px;
+    margin-top: 5%;
+}
+
+#name-title{
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    font-size: 1.12em;
+    margin-top: 230px;
+}
+
+/* About section */
