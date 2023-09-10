@@ -6,11 +6,12 @@
     <title>Alex Grabski ~ Main</title>
     <script defer src="scripts/scroll.js"></script>
     <script defer src="scripts/tilting.js"></script>
+    <script defer src="scripts/changePage.js"></script>
     <link rel="stylesheet" href="styles/styles.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <main>
+    <main id="main">
         <header class="hidden">
             <a href="#home"><img class="logo" src="assets/logo.png"></a>
             <nav class="hidden">
@@ -22,7 +23,7 @@
                 </ul>
             </nav>
             <div>
-                <a class="cts" href="./pages/contact.html"><button id="contact-btn">Contact</button></a>
+                <a class="cts" href="#"><button id="contact-btn">Contact</button></a>
                 <a class="cts" href="#"><button id="download-cv">Get CV</button></a>
             </div>
         </header>
@@ -311,7 +312,18 @@
         </section>
     </main>
 
-    <footer>
+    <div id="contact-form">
+        <h1><span class="mint-green-text">Send me</span> an <span class="darkturcuse-text">email</span></h1>
+        <form>
+            <input type="text" id="name" placeholder="Your name" required>
+            <input type="text" id="email" placeholder="Your Email" required>
+            <input type="text" id="phone" placeholder="Phone number" required>
+            <textarea id="message" rows="14" placeholder="Message"></textarea>
+            <button type="submit" id="submit-btn">Send</button>
+        </form>
+    </div>
+
+    <footer id="footer">
         <div class="footer-content">
             <h3>Alex Grabski</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>
