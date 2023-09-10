@@ -175,7 +175,7 @@ header {
     padding: 20px;
     border-radius: 30px;
     min-width: 162px;
-    background-color: darkturquoise;
+    background-color: rgb(36, 35, 35);
     margin-top: 25px;
     margin-left: 5px;
     margin-right: 5px;
@@ -183,8 +183,39 @@ header {
     cursor: pointer;
     text-decoration: none;
 }
+.tech-stack-element h3 {
+    font-size: 1.6em;
+    background-color: rgb(36, 35, 35);
+}
+.tech-stack-element .rangeValue {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center  ;
+    background-color: rgb(36, 35, 35);
+}
+.tech-stack-element input{
+    -webkit-appearance: none;
+    width: 300px;
+    height: 40px;
+    border-radius: 15px;
+    background: #fff;
+    outline: none;
+    overflow: hidden;
+}
+.tech-stack-element input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 40px;
+    height: 40px;
+    background: #98FF98;
+    border-radius: 10px;
+    box-shadow: -350px 0px 0px 340px #98FF98;
+}
+.tech-stack-element h4{
+    background-color: rgb(36, 35, 35) ;
+}
 
-.tech-stack-element:hover{
+/* .tech-stack-element:hover{
     background-color: #98FF98;
     box-shadow: 0px 0px 12px #fff;
-}
+} */
