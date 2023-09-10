@@ -114,6 +114,12 @@ header {
     margin-top: 400px;
 }
 
+#scroll-down-about {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    margin-top: 70px;
+}
+
 /* About section */
 #about{
     margin-top: 200px;
