@@ -7,306 +7,319 @@
     <script defer src="scripts/scroll.js"></script>
     <script defer src="scripts/tilting.js"></script>
     <link rel="stylesheet" href="styles/styles.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header class="hidden">
-        <img class="logo" src="assets/logo.png">
-        <nav class="hidden">
-            <ul class="nav-links">
-                <li class="nav-option"><a href="#">Home</a></li>
-                <li class="nav-option"><a href="#">About</a></li>
-                <li class="nav-option"><a href="#">Skills</a></li>
-                <li class="nav-option"><a href="#">Projects</a></li>
-            </ul>
-        </nav>
-        <a class="cts" href="#"><button id="contact-btn">Contact</button></a>
-    </header>
-
-    <section id="home" class="hidden">
-
-        <div id="hello" class="hidden">
-            <h1>Hello!</h1>
-        </div>
-        <div id="name-title" class="hidden">
-            <h2>Alex Grabski - <span class="darkturcuse-text">Software Developer</span></h2>
+    <div class="main-content">
+        <header class="hidden">
+            <img class="logo" src="assets/logo.png">
+            <nav class="hidden">
+                <ul class="nav-links">
+                    <li class="nav-option"><a href="#">Home</a></li>
+                    <li class="nav-option"><a href="#">About</a></li>
+                    <li class="nav-option"><a href="#">Skills</a></li>
+                    <li class="nav-option"><a href="#">Projects</a></li>
+                </ul>
+            </nav>
+            <a class="cts" href="#"><button id="contact-btn">Contact</button></a>
+        </header>
+    
+        <section id="home" class="hidden">
+    
+            <div id="hello" class="hidden">
+                <h1>Hello!</h1>
+            </div>
+            <div id="name-title" class="hidden">
+                <h2>Alex Grabski - <span class="darkturcuse-text">Software Developer</span></h2>
+            </div>
+        
+        </section>
+    
+        <div id="scroll-down-section" class="hidden">
+            <h2 id="scroll-down">Scroll down to see more!</h2>
         </div>
     
-    </section>
-
-    <div id="scroll-down-section" class="hidden">
-        <h2 id="scroll-down">Scroll down to see more!</h2>
+        <section id="about">
+            <div id="about-introduction" class="hidden">
+                <h1><span class="mint-green-text">Hey</span>, my name is <span class="darkturcuse-text">Alex</span> here you can get to know me a little!</h1>
+            </div>
+    
+            <div class="about-text">
+                <h2 class="hidden">So as I said my name is <span class="darkturcuse-text">Alex</span>, I'am a future <span class="darkturcuse-text">Software Developer</span> <br>
+                    Currently I'am on my second year of <span class="mint-green-text">programming school</span> in Poland <br>
+                    I started <span class="mint-green-text">programming</span> when i was only <span class="darkturcuse-text">13 years old</span>, and I think it's kind of cool
+                </h2> <br>
+                <h2 class="hidden">For the most time i was just <span class="mint-green-text">messing around</span> with the <span class="darkturcuse-text">code</span>, <br>
+                    but as i was <span class="darkturcuse-text">learning new things</span> i started to do it more <span class="mint-green-text">seriously</span> <br>
+                    Now i have <span class="mint-green-text">experience</span> in multiple frameworks, IDE's, liblaries, languages <br>
+                    and what is crucial i have <span class="darkturcuse-text">exprerience</span> in writing <span class="mint-green-text">clean and functional code!</span>
+                </h2> <br>
+                <h2 class="hidden">For the most time of the day i <span class="mint-green-text">code...</span> well besides school,
+                    where i also code!<br>
+                    However i still strugle somtimes like every <span class="darkturcuse-text">programmer</span>
+                    and this is why I'am an<span class="mint-green-text"> absolute fan</span> of <span class="darkturcuse-text">books</span>,
+                    <span class="mint-green-text">bootcamps</span>, <span class="darkturcuse-text">courses</span>, 
+                    <span class="mint-green-text">tutorials</span> and everything related.<br>
+                    I just love learing new stuff, features, functionlities in anything even remotly connected to
+                    <span class="darkturcuse-text">programming</span> / <span class="mint-green-text">coding!</span>
+                </h2> <br>
+            </div>
+        </section>
+        <div id="scroll-down-section" class="hidden">
+            <h2 id="scroll-down-about">Scroll down to see more!</h2>
+        </div>
+        <section id="skills" class="hidden">
+            <div id="about-introduction" class="hidden">
+                <h1><span class="mint-green-text">Here</span> I will show you my <span class="darkturcuse-text">tech stack</span></h1>
+            </div>
+            <div id="tech-stack">
+                <div class="container" class="hidden">
+                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
+                        <h3>HTML</h3>
+                        <div class="rangeValue">90%</div>
+                        <input type="range" min="0" max="100" value="90" disabled/>
+                        <h4>Advanced</h4>
+                    </div>
+                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
+                        <h3>CSS</h3>
+                        <div class="rangeValue">80%</div>
+                        <input type="range" min="0" max="100" value="80" disabled/>
+                        <h4>Advanced</h4>
+                    </div>
+                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
+                        <h3>JavaScript</h3>
+                        <div class="rangeValue">75%</div>
+                        <input type="range" min="0" max="100" value="75" disabled/>
+                        <h4>Intermediate</h4>
+                    </div>
+                </div>
+    
+                <div class="container" class="hidden" >
+                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
+                        <h3>NodeJS</h3>
+                        <div class="rangeValue">60%</div>
+                        <input type="range" min="0" max="100" value="60" disabled/>
+                        <h4>Beginner</h4>
+                    </div>
+                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
+                        <h3>C#</h3>
+                        <div class="rangeValue">50%</div>
+                        <input type="range" min="0" max="100" value="50" disabled/>
+                        <h4>Beginner</h4>
+                    </div>
+                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
+                        <h3>ReactJS</h3>
+                        <div class="rangeValue">35%</div>
+                        <input type="range" min="0" max="100" value="35" disabled/>
+                        <h4>Beginner</h4>
+                    </div>
+                </div>
+    
+                <div class="container" class="hidden">
+                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
+                        <h3>Express</h3>
+                        <div class="rangeValue">60%</div>
+                        <input type="range" min="0" max="100" value="60" disabled/>
+                        <h4>Begineer</h4>
+                    </div>
+                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
+                        <h3>Python</h3>
+                        <div class="rangeValue">70%</div>
+                        <input type="range" min="0" max="100" value="70" disabled/>
+                        <h4>Intermediate</h4>
+                    </div>
+                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
+                        <h3>TypeScript</h3>
+                        <div class="rangeValue">55%</div>
+                        <input type="range" min="0" max="100" value="55" disabled/>
+                        <h4>Begineer</h4>
+                    </div>
+                </div>
+    
+                <div class="container" class="hidden">
+                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
+                        <h3>SASS</h3>
+                        <div class="rangeValue">40%</div>
+                        <input type="range" min="0" max="100" value="40" disabled/>
+                        <h4>Begineer</h4>
+                    </div>
+                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
+                        <h3>MySQL</h3>
+                        <div class="rangeValue">75%</div>
+                        <input type="range" min="0" max="100" value="75" disabled/>
+                        <h4>Intermediate</h4>
+                    </div>
+                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
+                        <h3>MariaDB</h3>
+                        <div class="rangeValue">75%</div>
+                        <input type="range" min="0" max="100" value="75" disabled/>
+                        <h4>Intermediate</h4>
+                    </div>
+                </div>
+    
+                <div class="container" class="hidden">
+                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
+                        <h3>PHP</h3>
+                        <div class="rangeValue">30%</div>
+                        <input type="range" min="0" max="100" value="30" disabled/>
+                        <h4>Begineer</h4>
+                    </div>
+                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
+                        <h3>GIT</h3>
+                        <div class="rangeValue">80%</div>
+                        <input type="range" min="0" max="100" value="80" disabled/>
+                        <h4>Intermediate</h4>
+                    </div>
+                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
+                        <h3>Apache</h3>
+                        <div class="rangeValue">55%</div>
+                        <input type="range" min="0" max="100" value="55" disabled/>
+                        <h4>Begineer</h4>
+                    </div>
+                </div>
+    
+                <div class="container" class="hidden">
+                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
+                        <h3>C++</h3>
+                        <div class="rangeValue">30%</div>
+                        <input type="range" min="0" max="100" value="30" disabled/>
+                        <h4>Begineer</h4>
+                    </div>
+                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
+                        <h3>C</h3>
+                        <div class="rangeValue">20%</div>
+                        <input type="range" min="0" max="100" value="20" disabled/>
+                        <h4>Beginner</h4>
+                    </div>
+                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
+                        <h3>Haskel</h3>
+                        <div class="rangeValue">15%</div>
+                        <input type="range" min="0" max="100" value="15" disabled/>
+                        <h4>Begineer</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="scroll-down-section" class="hidden">
+            <h2 id="scroll-down-about">Scroll down to see more!</h2>
+        </div>
+        <section id="projects" class="hidden">
+            <div class="project-container" id="projectOne" >
+                <div class="project-inner">
+                    <div class="contents">
+                        <h1 class="hidden">Project 1</h1>
+                        <h4 class="hidden">
+                            Lorem ipsum dolor sit amet, bhucs<br>
+                            consectetur adipisicing elit. kluch<br>
+                            Sunt cum harum praesentium mollitia,<br>
+                            nihil laboriosam, quis error quisqs<br>
+                            uam consequatur deserunt corruptisf<br>
+                            eos voluptate klupata tat dt tagffh<br>
+                            culpa nisi perspiciatis. Nihnsr at?<br>
+                            nihil laboriosam, quis error quisqs<br>
+                            uam consequatur deserunt corruptisf<br>
+                            eos voluptate klupata tat dt tagffh<br>
+                            culpa nisi perspiciatis. Nihnsr at?<br>
+                            culpa nisi perspiciatis. Nihnsr at?<br>
+                            nihil laboriosam, quis error quisqs<br>
+                            uam consequatur deserunt corruptisf<br>
+                        </h4>
+                        <a href="#" class="hidden"><button class="project-button">Source code</button></a>
+                        <a href="#" class="hidden"><button class="project-button">Try it out!</button></a>
+                    </div>
+                    <div class="contents">
+                        <div class="contents-photos">
+                            <img class="project-photo" src="assets/project1photo1.PNG"/>
+                        </div>
+                        <div class="contents-photos">
+                            <img class="project-photo" src="assets/project1photo2.PNG"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="project-container" id="projectTwo">
+                <div class="project-inner">
+                    <div class="contents">
+                        <h1 class="hidden">Project 2</h1>
+                        <h4 class="hidden">
+                            Lorem ipsum dolor sit amet, bhucs<br>
+                            consectetur adipisicing elit. kluch<br>
+                            Sunt cum harum praesentium mollitia,<br>
+                            nihil laboriosam, quis error quisqs<br>
+                            uam consequatur deserunt corruptisf<br>
+                            eos voluptate klupata tat dt tagffh<br>
+                            culpa nisi perspiciatis. Nihnsr at?<br>
+                            nihil laboriosam, quis error quisqs<br>
+                            uam consequatur deserunt corruptisf<br>
+                            eos voluptate klupata tat dt tagffh<br>
+                            culpa nisi perspiciatis. Nihnsr at?<br>
+                            culpa nisi perspiciatis. Nihnsr at?<br>
+                            nihil laboriosam, quis error quisqs<br>
+                            uam consequatur deserunt corruptisf<br>
+                        </h4>
+                        <a href="#" class="hidden"><button class="project-button">Source code</button></a>
+                        <a href="#" class="hidden"><button class="project-button">Try it out!</button></a>
+                    </div>
+                    <div class="contents">
+                        <div class="contents-photos">
+                            <img class="project-photo" src="assets/project1photo1.PNG"/>
+                        </div>
+                        <div class="contents-photos">
+                            <img class="project-photo" src="assets/project1photo2.PNG"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="project-container" id="projectThree">
+                <div class="project-inner">
+                    <div class="contents">
+                        <h1 class="hidden">Project 3</h1>
+                        <h4 class="hidden">
+                            Lorem ipsum dolor sit amet, bhucs<br>
+                            consectetur adipisicing elit. kluch<br>
+                            Sunt cum harum praesentium mollitia,<br>
+                            nihil laboriosam, quis error quisqs<br>
+                            uam consequatur deserunt corruptisf<br>
+                            eos voluptate klupata tat dt tagffh<br>
+                            culpa nisi perspiciatis. Nihnsr at?<br>
+                            nihil laboriosam, quis error quisqs<br>
+                            uam consequatur deserunt corruptisf<br>
+                            eos voluptate klupata tat dt tagffh<br>
+                            culpa nisi perspiciatis. Nihnsr at?<br>
+                            culpa nisi perspiciatis. Nihnsr at?<br>
+                            nihil laboriosam, quis error quisqs<br>
+                            uam consequatur deserunt corruptisf<br>
+                        </h4>
+                        <a href="#" class="hidden"><button class="project-button">Source code</button></a>
+                        <a href="#" class="hidden"><button class="project-button">Try it out!</button></a>
+                    </div>
+                    <div class="contents">
+                        <div class="contents-photos">
+                            <img class="project-photo" src="assets/project1photo1.PNG"/>
+                        </div>
+                        <div class="contents-photos">
+                            <img class="project-photo" src="assets/project1photo2.PNG"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
-    <section id="about">
-        <div id="about-introduction" class="hidden">
-            <h1><span class="mint-green-text">Hey</span>, my name is <span class="darkturcuse-text">Alex</span> here you can get to know me a little!</h1>
+    <footer>
+        <div class="footer-content">
+            <h3>Alex Grabski</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
         </div>
-
-        <div class="about-text">
-            <h2 class="hidden">So as I said my name is <span class="darkturcuse-text">Alex</span>, I'am a future <span class="darkturcuse-text">Software Developer</span> <br>
-                Currently I'am on my second year of <span class="mint-green-text">programming school</span> in Poland <br>
-                I started <span class="mint-green-text">programming</span> when i was only <span class="darkturcuse-text">13 years old</span>, and I think it's kind of cool
-            </h2> <br>
-            <h2 class="hidden">For the most time i was just <span class="mint-green-text">messing around</span> with the <span class="darkturcuse-text">code</span>, <br>
-                but as i was <span class="darkturcuse-text">learning new things</span> i started to do it more <span class="mint-green-text">seriously</span> <br>
-                Now i have <span class="mint-green-text">experience</span> in multiple frameworks, IDE's, liblaries, languages <br>
-                and what is crucial i have <span class="darkturcuse-text">exprerience</span> in writing <span class="mint-green-text">clean and functional code!</span>
-            </h2> <br>
-            <h2 class="hidden">For the most time of the day i <span class="mint-green-text">code...</span> well besides school,
-                where i also code!<br>
-                However i still strugle somtimes like every <span class="darkturcuse-text">programmer</span>
-                and this is why I'am an<span class="mint-green-text"> absolute fan</span> of <span class="darkturcuse-text">books</span>,
-                <span class="mint-green-text">bootcamps</span>, <span class="darkturcuse-text">courses</span>, 
-                <span class="mint-green-text">tutorials</span> and everything related.<br>
-                I just love learing new stuff, features, functionlities in anything even remotly connected to
-                <span class="darkturcuse-text">programming</span> / <span class="mint-green-text">coding!</span>
-            </h2> <br>
-        </div>
-    </section>
-    <div id="scroll-down-section" class="hidden">
-        <h2 id="scroll-down-about">Scroll down to see more!</h2>
-    </div>
-    <section id="skills" class="hidden">
-        <div id="about-introduction" class="hidden">
-            <h1><span class="mint-green-text">Here</span> I will show you my <span class="darkturcuse-text">tech stack</span></h1>
-        </div>
-        <div id="tech-stack">
-            <div class="container" class="hidden">
-                <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                    <h3>HTML</h3>
-                    <div class="rangeValue">90%</div>
-                    <input type="range" min="0" max="100" value="90" disabled/>
-                    <h4>Advanced</h4>
-                </div>
-                <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                    <h3>CSS</h3>
-                    <div class="rangeValue">80%</div>
-                    <input type="range" min="0" max="100" value="80" disabled/>
-                    <h4>Advanced</h4>
-                </div>
-                <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                    <h3>JavaScript</h3>
-                    <div class="rangeValue">75%</div>
-                    <input type="range" min="0" max="100" value="75" disabled/>
-                    <h4>Intermediate</h4>
-                </div>
-            </div>
-
-            <div class="container" class="hidden" >
-                <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                    <h3>NodeJS</h3>
-                    <div class="rangeValue">60%</div>
-                    <input type="range" min="0" max="100" value="60" disabled/>
-                    <h4>Beginner</h4>
-                </div>
-                <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                    <h3>C#</h3>
-                    <div class="rangeValue">50%</div>
-                    <input type="range" min="0" max="100" value="50" disabled/>
-                    <h4>Beginner</h4>
-                </div>
-                <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                    <h3>ReactJS</h3>
-                    <div class="rangeValue">35%</div>
-                    <input type="range" min="0" max="100" value="35" disabled/>
-                    <h4>Beginner</h4>
-                </div>
-            </div>
-
-            <div class="container" class="hidden">
-                <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                    <h3>Express</h3>
-                    <div class="rangeValue">60%</div>
-                    <input type="range" min="0" max="100" value="60" disabled/>
-                    <h4>Begineer</h4>
-                </div>
-                <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                    <h3>Python</h3>
-                    <div class="rangeValue">70%</div>
-                    <input type="range" min="0" max="100" value="70" disabled/>
-                    <h4>Intermediate</h4>
-                </div>
-                <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                    <h3>TypeScript</h3>
-                    <div class="rangeValue">55%</div>
-                    <input type="range" min="0" max="100" value="55" disabled/>
-                    <h4>Begineer</h4>
-                </div>
-            </div>
-
-            <div class="container" class="hidden">
-                <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                    <h3>SASS</h3>
-                    <div class="rangeValue">40%</div>
-                    <input type="range" min="0" max="100" value="40" disabled/>
-                    <h4>Begineer</h4>
-                </div>
-                <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                    <h3>MySQL</h3>
-                    <div class="rangeValue">75%</div>
-                    <input type="range" min="0" max="100" value="75" disabled/>
-                    <h4>Intermediate</h4>
-                </div>
-                <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                    <h3>MariaDB</h3>
-                    <div class="rangeValue">75%</div>
-                    <input type="range" min="0" max="100" value="75" disabled/>
-                    <h4>Intermediate</h4>
-                </div>
-            </div>
-
-            <div class="container" class="hidden">
-                <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                    <h3>PHP</h3>
-                    <div class="rangeValue">30%</div>
-                    <input type="range" min="0" max="100" value="30" disabled/>
-                    <h4>Begineer</h4>
-                </div>
-                <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                    <h3>GIT</h3>
-                    <div class="rangeValue">80%</div>
-                    <input type="range" min="0" max="100" value="80" disabled/>
-                    <h4>Intermediate</h4>
-                </div>
-                <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                    <h3>Apache</h3>
-                    <div class="rangeValue">55%</div>
-                    <input type="range" min="0" max="100" value="55" disabled/>
-                    <h4>Begineer</h4>
-                </div>
-            </div>
-
-            <div class="container" class="hidden">
-                <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                    <h3>C++</h3>
-                    <div class="rangeValue">30%</div>
-                    <input type="range" min="0" max="100" value="30" disabled/>
-                    <h4>Begineer</h4>
-                </div>
-                <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                    <h3>C</h3>
-                    <div class="rangeValue">20%</div>
-                    <input type="range" min="0" max="100" value="20" disabled/>
-                    <h4>Beginner</h4>
-                </div>
-                <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                    <h3>Haskel</h3>
-                    <div class="rangeValue">15%</div>
-                    <input type="range" min="0" max="100" value="15" disabled/>
-                    <h4>Begineer</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div id="scroll-down-section" class="hidden">
-        <h2 id="scroll-down-about">Scroll down to see more!</h2>
-    </div>
-    <section id="projects" class="hidden">
-        <div class="project-container" id="projectOne" >
-            <div class="project-inner">
-                <div class="contents">
-                    <h1 class="hidden">Project 1</h1>
-                    <h4 class="hidden">
-                        Lorem ipsum dolor sit amet, bhucs<br>
-                        consectetur adipisicing elit. kluch<br>
-                        Sunt cum harum praesentium mollitia,<br>
-                        nihil laboriosam, quis error quisqs<br>
-                        uam consequatur deserunt corruptisf<br>
-                        eos voluptate klupata tat dt tagffh<br>
-                        culpa nisi perspiciatis. Nihnsr at?<br>
-                        nihil laboriosam, quis error quisqs<br>
-                        uam consequatur deserunt corruptisf<br>
-                        eos voluptate klupata tat dt tagffh<br>
-                        culpa nisi perspiciatis. Nihnsr at?<br>
-                        culpa nisi perspiciatis. Nihnsr at?<br>
-                        nihil laboriosam, quis error quisqs<br>
-                        uam consequatur deserunt corruptisf<br>
-                    </h4>
-                    <a href="#" class="hidden"><button class="project-button">Source code</button></a>
-                    <a href="#" class="hidden"><button class="project-button">Try it out!</button></a>
-                </div>
-                <div class="contents">
-                    <div class="contents-photos">
-                        <img class="project-photo" src="assets/project1photo1.PNG"/>
-                    </div>
-                    <div class="contents-photos">
-                        <img class="project-photo" src="assets/project1photo2.PNG"/>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-container" id="projectTwo">
-            <div class="project-inner">
-                <div class="contents">
-                    <h1 class="hidden">Project 2</h1>
-                    <h4 class="hidden">
-                        Lorem ipsum dolor sit amet, bhucs<br>
-                        consectetur adipisicing elit. kluch<br>
-                        Sunt cum harum praesentium mollitia,<br>
-                        nihil laboriosam, quis error quisqs<br>
-                        uam consequatur deserunt corruptisf<br>
-                        eos voluptate klupata tat dt tagffh<br>
-                        culpa nisi perspiciatis. Nihnsr at?<br>
-                        nihil laboriosam, quis error quisqs<br>
-                        uam consequatur deserunt corruptisf<br>
-                        eos voluptate klupata tat dt tagffh<br>
-                        culpa nisi perspiciatis. Nihnsr at?<br>
-                        culpa nisi perspiciatis. Nihnsr at?<br>
-                        nihil laboriosam, quis error quisqs<br>
-                        uam consequatur deserunt corruptisf<br>
-                    </h4>
-                    <a href="#" class="hidden"><button class="project-button">Source code</button></a>
-                    <a href="#" class="hidden"><button class="project-button">Try it out!</button></a>
-                </div>
-                <div class="contents">
-                    <div class="contents-photos">
-                        <img class="project-photo" src="assets/project1photo1.PNG"/>
-                    </div>
-                    <div class="contents-photos">
-                        <img class="project-photo" src="assets/project1photo2.PNG"/>
-                    </div>
-                </div>
-            </div>
-        
-
-        </div>
-
-        <div class="project-container" id="projectThree">
-            <div class="project-inner">
-                <div class="contents">
-                    <h1 class="hidden">Project 3</h1>
-                    <h4 class="hidden">
-                        Lorem ipsum dolor sit amet, bhucs<br>
-                        consectetur adipisicing elit. kluch<br>
-                        Sunt cum harum praesentium mollitia,<br>
-                        nihil laboriosam, quis error quisqs<br>
-                        uam consequatur deserunt corruptisf<br>
-                        eos voluptate klupata tat dt tagffh<br>
-                        culpa nisi perspiciatis. Nihnsr at?<br>
-                        nihil laboriosam, quis error quisqs<br>
-                        uam consequatur deserunt corruptisf<br>
-                        eos voluptate klupata tat dt tagffh<br>
-                        culpa nisi perspiciatis. Nihnsr at?<br>
-                        culpa nisi perspiciatis. Nihnsr at?<br>
-                        nihil laboriosam, quis error quisqs<br>
-                        uam consequatur deserunt corruptisf<br>
-                    </h4>
-                    <a href="#" class="hidden"><button class="project-button">Source code</button></a>
-                    <a href="#" class="hidden"><button class="project-button">Try it out!</button></a>
-                </div>
-                <div class="contents">
-                    <div class="contents-photos">
-                        <img class="project-photo" src="assets/project1photo1.PNG"/>
-                    </div>
-                    <div class="contents-photos">
-                        <img class="project-photo" src="assets/project1photo2.PNG"/>
-                    </div>
-                </div>
-            </div>
-        
-
-        </div>
-    </section>
+    </footer>
 </body>
 </html>

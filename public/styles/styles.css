@@ -342,3 +342,62 @@ header {
     margin-right: 30%;
 }
 
+/* Footer */
+footer{
+    margin-top: 200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 220px;
+    font-family:"Montserrat", sans-serif  ;
+    padding-top: 40px;
+    color: #fff;
+    overflow: hidden;
+    background: rgba(36, 35, 35, 0.4);
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: transparent;
+}
+.footer-content h3{
+    font-size: 1.8em;
+    font-weight: 600;
+    background: transparent;
+}
+.footer-content p{
+    max-width: 500px;
+    margin-top: 10px;
+    font-size: 16px;
+    background: transparent;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    margin-top: 25px;
+}
+.socials li{
+    margin-left: 10px;
+    margin-right: 10px;
+    background: transparent;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    background: transparent;
+}
+.socials a i{
+    font-size: 2em;
+    transition: color 1s ease 0s;
+    background: transparent;
+}
+.socials a:hover i{
+    color: darkturquoise;
+    background: transparent;
+}
