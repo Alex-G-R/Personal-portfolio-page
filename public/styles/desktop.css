@@ -1,5 +1,61 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500');
 
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #080808; /* Black bg */
+    color: #fff;
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
+}
+
+/* Slider */
+
+/* Customize the scrollbar track */
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(36, 35, 35); /* Dark matte gray background color for the track */
+}
+
+/* Customize the scrollbar thumb (handle) */
+::-webkit-scrollbar-thumb {
+  background-color: #464343; /* Dark matte gray thumb color */
+  border-radius: 6px;
+}
+
+/* Hover state for the scrollbar thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #5e5c5c; /* Darker gray on hover */
+}
+  
+
+/* Text coloring */
+
+.mint-green-text{
+    color: #98FF98;
+}
+.darkturcuse-text{
+    color: darkturquoise;
+}
+
+/* .hidden / .show */
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
 /* Media query for screens with a minimum width of 769px (typical desktop screens) */
 @media (min-width: 769px) {
     /* NavBar */
