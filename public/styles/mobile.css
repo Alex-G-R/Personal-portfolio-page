@@ -32,41 +32,49 @@
     transform: translateX(0);
 }
 
-/* Media query for screens with a minimum width of 769px (typical desktop screens) */
-@media (min-width: 769px) {
+
+/* Media query for screens with a maximum width of 768px (typical mobile screens) */
+@media (max-width: 768px) {
+
     /* NavBar */
 
     .nav-option, .nav-option a {
         font-family: "Montserrat", sans-serif;
         font-weight: 500;
-        font-size: 26px;
+        font-size: 16px;
         color: #fff; /* White */
         text-decoration: none;
     }
 
     header {
+        overflow: hidden;
         position: fixed; /* Change to fixed */
         top: 0;
         width: 100%; /* Ensure the header spans the entire width */
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 10%; /* 30px top and bottom, 10% on sides */
+        padding: 1% 1%; /* 30px top and bottom, 10% on sides */
         z-index: 1000; /* Set a high z-index value to ensure it appears above other content */
+        max-height: 200px;
     }
 
     .logo{
-        max-width: 200px;
+        max-width: 100px;
         cursor: pointer;
     }
 
     .nav-links {
+        font-size: 1.3em;
+        padding: 5px;
         list-style: none;
     }
 
     .nav-links li {
         display: inline-block; /* Side by side */
-        padding:  0px 20px;
+        padding:  8px 6px;
+        border-radius: 15px;
+        border: 2px #fff solid;
     }
 
     .nav-links a {
@@ -78,30 +86,32 @@
     }
 
     #contact-btn{
-        margin-right: 10px ;
-        padding: 9px 25px;
+        width: 70px;
+        padding: 3% 3%;
         border-radius: 50px;
-        font-size: 20px;
+        font-size: 13px;
         font-weight: bold;
         background-color: white;
         color: black;
         border: none;
         cursor: pointer;
         transition: all 0.6s ease 0s;
-        max-height: 125px;
+        height: 33px;
+        margin-bottom: 10px;
     }
 
     #download-cv{
-        margin-left: 10px ;
-        padding: 9px 25px;
+        width: 70px;
+        padding: 3% 3%;
         border-radius: 50px;
-        font-size: 20px;
+        font-size: 13px;
         font-weight: bold;
         background-color: white;
         color: black;
         border: none;
         cursor: pointer;
         transition: all 0.6s ease 0s;
+        height: 33px;
     }
 
     #contact-btn:hover {
@@ -128,13 +138,13 @@
     #home h1 {
         color: #98FF98;
         font-family: "Montserrat", sans-serif;
-        font-size: 180px;
-        margin-top: 25%;
+        font-size: 90px;
+        margin-top: 40%;
     }
 
     #name-title{
         font-family: "Montserrat", sans-serif;
-        font-size: 1.12em;
+        font-size: 0.9em;
     }
 
     #name-title h2 span{
@@ -151,7 +161,7 @@
     #scroll-down {
         font-family: "Montserrat", sans-serif;
         font-size: 1em;
-        margin-top: 400px;
+        margin-top: 300px;
     }
 
     #scroll-down-about {
@@ -162,7 +172,7 @@
 
     /* About section */
     #about{
-        margin-top: 200px;
+        margin-top: 300px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -172,13 +182,17 @@
 
     #about-introduction{
         font-family: "Montserrat", sans-serif;
-        font-size: 1.25em;
+        margin: 4%;
+        padding: 20px;
     }
 
     .about-text{
+        padding: 20px;
+        margin: 4%;
         font-family: "Montserrat", sans-serif;
         max-width: 886px;
         margin-top: 20px;
+        font-size: 0.75em;
     }
     /* Skills section */
     #skills{
@@ -192,6 +206,8 @@
     }
     .container{
         display: flex;
+        align-items: center;
+        justify-content: center;
         min-width: 355px;
         max-width: 1050px;
     }
@@ -202,14 +218,12 @@
         justify-content: center;
         text-align: center;
         font-family: "Montserrat", sans-serif;
-        font-size: 1.5em;
-        padding: 20px;
+        font-size: 1.3em;
+        padding: 17px;
         border-radius: 30px;
-        min-width: 355px;
+        max-width: 300px;
         background-color: rgb(36, 35, 35);
-        margin-top: 25px;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin-top: 22px;
         transition: all 0.6s ease 0s;
         cursor: pointer;
         text-decoration: none;
@@ -231,7 +245,7 @@
     }
     .tech-stack-element input{
         -webkit-appearance: none;
-        width: 300px;
+        width: 260px;
         height: 40px;
         border-radius: 15px;
         background: #fff;
@@ -278,8 +292,8 @@
     .project-container{
         margin-top: 80px;
         font-family: "Montserrat", sans-serif;
-        height: 500px;
-        width: 800px;
+        max-height: 1100px;
+        width: 300px;
         background-color: rgb(36, 35, 35) ;
         border-radius: 15px;
         transition: all 0.6s ease 0s;
@@ -307,7 +321,6 @@
 
     .project-container h1{
         padding: 25px;
-        font-size: 3em;
         background: transparent;
     }
 
@@ -317,22 +330,22 @@
 
     .project-container h4{
         margin-left: 25px;
-        max-width: 340px;
+        max-width: 260px;
         background: transparent;
     }
 
     .project-photo{
         margin-top: 40px;
-        margin-left: 50px;
-        margin-right: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
         border-radius: 15px;
-        height: 190px;
-        width: 340px;
+        height: 160px;
+        width: 270px;
         background: transparent;
     }
 
     .project-button{
-        margin-top: 30px;
+        margin-top: 10px;
         height: 60px;
         width: 130px;
         margin-left: 35px;
@@ -340,11 +353,11 @@
         background: #fff;
         border-radius: 50px;
         font-family: "Montserrat", sans-serif ;
-        font-size: 1em;
-        font-weight: 900;
+        font-weight: 700;
         color: #080808;
         transition: all 1s ease 0s;
         border: #fff 2px solid;
+        margin-bottom: 10px;
     }
 
     .project-button:hover{
@@ -354,25 +367,16 @@
         box-shadow: 0px 0px 15px #fff;
     }
 
-    #projectOne{
-        margin-left: 5%;
-        margin-right: 30%;
-    }
-
-    #projectTwo{
-        margin-left: 30%;
-        margin-right: 5%;
-    }
 
     #btn-project-two{
-        width: 270px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 220px;
     }
     #btn-project-three{
-        width: 270px;
-    }
-    #projectThree{
-        margin-left: 5%;
-        margin-right: 30%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 220px;
     }
 
     /* contact form */
@@ -512,7 +516,7 @@
         background: transparent;
     }
     .footer-content p{
-        max-width: 500px;
+        max-width: 400px;
         margin-top: 10px;
         font-size: 16px;
         background: transparent;
@@ -546,3 +550,4 @@
     }
 
 }
+
