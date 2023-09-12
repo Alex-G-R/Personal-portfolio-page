@@ -303,7 +303,7 @@
     .project-container{
         margin-top: 80px;
         font-family: "Montserrat", sans-serif;
-        height: 500px;
+        height: 520px;
         width: 800px;
         background-color: rgb(36, 35, 35) ;
         border-radius: 15px;
@@ -358,6 +358,7 @@
 
     .project-button{
         margin-top: 30px;
+        margin-bottom: 30px;
         height: 60px;
         width: 130px;
         margin-left: 35px;
