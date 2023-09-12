@@ -94,8 +94,10 @@
     }
 
     .nav-links li {
+        min-width: 70px;
+        text-align: center;
         display: inline-block; /* Side by side */
-        padding:  8px 6px;
+        padding:  8px 8px;
         border-radius: 15px;
         border: 2px #fff solid;
     }
@@ -109,10 +111,10 @@
     }
 
     #contact-btn{
-        width: 70px;
-        padding: 3% 3%;
+        width: 80px;
+        padding: 4% 4%;
         border-radius: 50px;
-        font-size: 13px;
+        font-size: 16px;
         font-weight: bold;
         background-color: white;
         color: black;
@@ -124,10 +126,10 @@
     }
 
     #download-cv{
-        width: 70px;
-        padding: 3% 3%;
+        width: 80px;
+        padding: 4% 4%;
         border-radius: 50px;
-        font-size: 13px;
+        font-size: 16px;
         font-weight: bold;
         background-color: white;
         color: black;
