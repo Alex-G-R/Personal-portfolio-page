@@ -255,6 +255,7 @@
     }
     .tech-stack-element input{
         -webkit-appearance: none;
+        appearance: none;
         width: 300px;
         height: 40px;
         border-radius: 15px;
