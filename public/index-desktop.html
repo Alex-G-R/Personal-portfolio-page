@@ -11,6 +11,18 @@
     <link rel="stylesheet" href="styles/desktop.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<script>
+    window.addEventListener("resize", () =>{
+        // Check the screen width
+        if (window.innerWidth <= 768) {
+            // Redirect to mobile version
+            window.location.href = 'index-mobile.html';
+        } else {
+            // Redirect to desktop version
+            window.location.href = 'index-desktop.html';
+        }
+    })
+</script>
 <body>
     <main id="main">
         <header class="hidden">
@@ -50,8 +62,8 @@
             </div>
     
             <div class="about-text">
-                <h2 class="hidden">So as I said my name is <span class="darkturcuse-text">Alex</span>, I'am a future <span class="darkturcuse-text">Software Developer</span> <br>
-                    Currently I'am on my second year of <span class="mint-green-text">programming school</span> in Poland <br>
+                <h2 class="hidden">So as I said my name is <span class="darkturcuse-text">Alex</span>, I'am a <span class="darkturcuse-text">Software Developer</span> <br>
+                    Currently I'am on my fourth year of <span class="mint-green-text">programming school</span> in Poland <br>
                     I started <span class="mint-green-text">programming</span> when i was only <span class="darkturcuse-text">13 years old</span>, and I think it's kind of cool
                 </h2> <br>
                 <h2 class="hidden">For the most time i was just <span class="mint-green-text">messing around</span> with the <span class="darkturcuse-text">code</span>, <br>
@@ -59,14 +71,13 @@
                     Now i have <span class="mint-green-text">experience</span> in multiple frameworks, IDE's, liblaries, languages <br>
                     and what is crucial i have <span class="darkturcuse-text">exprerience</span> in writing <span class="mint-green-text">clean and functional code!</span>
                 </h2> <br>
-                <h2 class="hidden">For the most time of the day i <span class="mint-green-text">code...</span> well besides school,
-                    where i also code!<br>
-                    However i still strugle somtimes like every <span class="darkturcuse-text">programmer</span>
-                    and this is why I'am an<span class="mint-green-text"> absolute fan</span> of <span class="darkturcuse-text">books</span>,
+                <h2 class="hidden">
+                    However I still have much to learn like every <span class="darkturcuse-text">programmer</span>
+                    and this is why I'am an<span class="mint-green-text"> huge fan</span> of <span class="darkturcuse-text">books</span>,
                     <span class="mint-green-text">bootcamps</span>, <span class="darkturcuse-text">courses</span>, 
                     <span class="mint-green-text">tutorials</span> and everything related.<br>
                     I just love learing new stuff, features, functionlities in anything even remotly connected to
-                    <span class="darkturcuse-text">programming</span> / <span class="mint-green-text">coding!</span>
+                    <span class="darkturcuse-text">programming</span>
                 </h2> <br>
             </div>
         </section>
@@ -78,6 +89,27 @@
                 <h1><span class="mint-green-text">Here</span> I will show you my <span class="darkturcuse-text">tech stack</span></h1>
             </div>
             <div id="tech-stack">
+                <div class="container" class="hidden">
+                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
+                        <h3>C++</h3>
+                        <div class="rangeValue">80%</div>
+                        <input type="range" min="0" max="100" value="70" disabled/>
+                        <h4>Advanced</h4>
+                    </div>
+                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
+                        <h3>JavaScript</h3>
+                        <div class="rangeValue">85%</div>
+                        <input type="range" min="0" max="100" value="85" disabled/>
+                        <h4>Advanced</h4>
+                    </div>
+                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
+                        <h3>Python</h3>
+                        <div class="rangeValue">70%</div>
+                        <input type="range" min="0" max="100" value="70" disabled/>
+                        <h4>Intermediate</h4>
+                    </div>
+                </div>
+
                 <div class="container" class="hidden">
                     <div class="tech-stack-element" data-tilt data-tilt-max="25">
                         <h3>HTML</h3>
@@ -92,7 +124,7 @@
                         <h4>Advanced</h4>
                     </div>
                     <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                        <h3>JavaScript</h3>
+                        <h3>NodeJS</h3>
                         <div class="rangeValue">75%</div>
                         <input type="range" min="0" max="100" value="75" disabled/>
                         <h4>Intermediate</h4>
@@ -101,10 +133,10 @@
     
                 <div class="container" class="hidden" >
                     <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                        <h3>NodeJS</h3>
-                        <div class="rangeValue">60%</div>
-                        <input type="range" min="0" max="100" value="60" disabled/>
-                        <h4>Beginner</h4>
+                        <h3>PHP</h3>
+                        <div class="rangeValue">70%</div>
+                        <input type="range" min="0" max="100" value="70" disabled/>
+                        <h4>Intermediate</h4>
                     </div>
                     <div class="tech-stack-element" data-tilt data-tilt-max="25">
                         <h3>C#</h3>
@@ -113,62 +145,19 @@
                         <h4>Beginner</h4>
                     </div>
                     <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                        <h3>ReactJS</h3>
-                        <div class="rangeValue">35%</div>
-                        <input type="range" min="0" max="100" value="35" disabled/>
+                        <h3>C</h3>
+                        <div class="rangeValue">50%</div>
+                        <input type="range" min="0" max="100" value="50" disabled/>
                         <h4>Beginner</h4>
                     </div>
-                    
                 </div>
     
                 <div class="container" class="hidden">
                     <div class="tech-stack-element" data-tilt data-tilt-max="25">
                         <h3>Express</h3>
-                        <div class="rangeValue">60%</div>
-                        <input type="range" min="0" max="100" value="60" disabled/>
-                        <h4>Begineer</h4>
-                    </div>
-                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                        <h3>Python</h3>
-                        <div class="rangeValue">70%</div>
-                        <input type="range" min="0" max="100" value="70" disabled/>
-                        <h4>Intermediate</h4>
-                    </div>
-                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                        <h3>TypeScript</h3>
-                        <div class="rangeValue">55%</div>
-                        <input type="range" min="0" max="100" value="55" disabled/>
-                        <h4>Begineer</h4>
-                    </div>
-                </div>
-    
-                <div class="container" class="hidden">
-                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                        <h3>SASS</h3>
-                        <div class="rangeValue">40%</div>
-                        <input type="range" min="0" max="100" value="40" disabled/>
-                        <h4>Begineer</h4>
-                    </div>
-                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                        <h3>MySQL</h3>
                         <div class="rangeValue">75%</div>
                         <input type="range" min="0" max="100" value="75" disabled/>
                         <h4>Intermediate</h4>
-                    </div>
-                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                        <h3>MariaDB</h3>
-                        <div class="rangeValue">75%</div>
-                        <input type="range" min="0" max="100" value="75" disabled/>
-                        <h4>Intermediate</h4>
-                    </div>
-                </div>
-    
-                <div class="container" class="hidden">
-                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                        <h3>PHP</h3>
-                        <div class="rangeValue">30%</div>
-                        <input type="range" min="0" max="100" value="30" disabled/>
-                        <h4>Begineer</h4>
                     </div>
                     <div class="tech-stack-element" data-tilt data-tilt-max="25">
                         <h3>GIT</h3>
@@ -177,31 +166,10 @@
                         <h4>Intermediate</h4>
                     </div>
                     <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                        <h3>Apache</h3>
-                        <div class="rangeValue">55%</div>
-                        <input type="range" min="0" max="100" value="55" disabled/>
-                        <h4>Begineer</h4>
-                    </div>
-                </div>
-    
-                <div class="container" class="hidden">
-                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                        <h3>C++</h3>
-                        <div class="rangeValue">30%</div>
-                        <input type="range" min="0" max="100" value="30" disabled/>
-                        <h4>Begineer</h4>
-                    </div>
-                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                        <h3>C</h3>
-                        <div class="rangeValue">20%</div>
-                        <input type="range" min="0" max="100" value="20" disabled/>
-                        <h4>Beginner</h4>
-                    </div>
-                    <div class="tech-stack-element" data-tilt data-tilt-max="25">
-                        <h3>Haskel</h3>
-                        <div class="rangeValue">15%</div>
-                        <input type="range" min="0" max="100" value="15" disabled/>
-                        <h4>Begineer</h4>
+                        <h3>MySQL/MariaDB</h3>
+                        <div class="rangeValue">75%</div>
+                        <input type="range" min="0" max="100" value="75" disabled/>
+                        <h4>Intermediate</h4>
                     </div>
                 </div>
             </div>
